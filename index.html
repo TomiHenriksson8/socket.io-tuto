@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="name-container">
+        <p id="username"></p>
+        <form id="name-form">
+          <input type="text" id="name" autocomplete="off" autocapitalize="off" placeholder="enter name..."><button>Set</button>
+        </form>
+        <div id="recent-rooms-container">
+          <h4>Recent Chats:</h3>
+          <ul id="recent-rooms"></ul>
+        </div>
+      </div>
+      <div id="room-container">
+        <form id="room-form">
+          <input id="room" placeholder="Enter chat name" autocomplete="off" />
+          <button type="submit">Join Chat</button>
+        </form>
+        <button id="disconnect-btn">Disconnect from Chat</button>
+      </div>
+    </div>
+    <div id="test">
+    <div id="chat-container">
+      <p id="room-name">Join chat to be able to send message</p>
+      <ul id="messages"></ul>
+      <div>
+      <p id="typing"></p>
+      </div>
+    </div>
+
+    <form id="form" action="">
+      <input id="input" autocomplete="off" /><button>Send</button>
+  </form>
+</div>
+  </body>
+</html>
